@@ -14,7 +14,8 @@ const schema = a.schema({
   })
   .authorization((allow) => allow.owner()),
 
-    
+  //export type Schema = ClientSchema<typeof schema>,
+
   generateRecipe: a.generation({
     aiModel: a.ai.model('Claude 3.5 Haiku'),
     systemPrompt: 'You are a helpful assistant that generates recipes.',
